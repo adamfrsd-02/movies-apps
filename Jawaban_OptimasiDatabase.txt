@@ -1,0 +1,3 @@
+1. Menyesuaikan spesifikasi server dengan kebutuhan aplikasi, jika server sudah ada. Maka diperlukan upgrade beberapa komponen untuk mencegah down-server.
+2. Melakukan tuning database, seperti menyesuaikan query dan konfigurasi database sesuai yang dibutuhkan, salah satu contohnya adalah melakukan serverside pagination, dan juga tidak sembarangan menuliskan query untuk menyeleksi semua data dari tabel, karena akan mengembalikan data yang mungkin saja tidak dibutuhkan oleh end-user.
+3. Menduplikasi server, sehingga jika sewaktu-waktu terjadi downserver. Dapat meminimalisir downtime, karena ada backup server jika server utama down.
